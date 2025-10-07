@@ -27,16 +27,16 @@ function PostsList() {
   //   fetchPosts();
   // }, []);
 
-  function addPostHandler(postData) {
-    fetch("http://localhost:8080/posts", {
-      method: "POST",
-      body: JSON.stringify(postData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    setPosts((prevState) => [postData, ...prevState]);
-  }
+  // function addPostHandler(postData) {
+  //   fetch("http://localhost:8080/posts", {
+  //     method: "POST",
+  //     body: JSON.stringify(postData),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   });
+  //   setPosts((prevState) => [postData, ...prevState]);
+  // }
 
   return (
     <>
